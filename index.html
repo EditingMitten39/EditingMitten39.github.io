@@ -2,58 +2,76 @@
 <html>
 <head>
 <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NNG website</title>
-<link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
-<link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
-<link href="css/bootstrap-4.4.1.css" rel="stylesheet" type="text/css">
-<style type="text/css">
-@import url("O.css");
-</style>
-<!-- <script src="jQueryAssets/jquery-1.11.1.min.js"></script> -->
-<script src="js/jquery-3.4.1.min.js"></script>
-</head>
+<title>NNG Website</title>
 
+<link href="lightslider.min.css" rel="stylesheet">
+<link href="fontawesome6.min.css" rel="stylesheet">
+<link href="ngg.css" rel="stylesheet">
+<link href="index.css" rel="stylesheet">
+<script src="jquery-3.7.1.min.js"></script>
+<script src="lightslider.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   var sliderSlideShow1 = $('#SlideShow1-gallery').lightSlider(
+   {
+      controls: false,
+      gallery: true,
+      item: 1,
+      loop: true,
+      thumbItem: 3,
+      thumbMargin: 5,
+      galleryMargin: 5,
+      pause: 3000,
+      auto: true
+});
+});
+</script>
+</head>
 <body>
-<img src="nng logo4.png" alt="" width="110" height="110" class="rounded"/>
-<nav class="navbar navbar-expand-lg navbar-light bg-light"> <a class="navbar-brand" href="#">MENUS ⚫</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent1">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active"> <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> </li>
-      <li class="nav-item"> <a class="nav-link" href="#">Link</a> </li>
-      <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Dropdown </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown1"> <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a> </div>
-      </li>
-      <li class="nav-item"> <a class="nav-link disabled" href="#">Disabled</a> </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-  </div>
-</nav>
-<header> <strong>Black Monkey With Thilapiya in beach</strong></header>
-<img src="thebest.png" width="1080" height="765" alt=""/>
-  
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap-4.4.1.js"></script>
-<div class="col-md-12">&nbsp;</div>
-<div class="card col-md-4 offset-md-4"> <img class="card-img-top img-thumbnail" src="thepiliya and monkey.png" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">One of our Creations</h5>
-    <p class="card-text">A Photoshoped Picture&nbsp;</p>
-    <a href="more.html" class="btn btn-primary">Find More</a>
-	</div>
+<div id="wb_Image1" style="position:absolute;left:0px;top:0px;width:153px;height:153px;z-index:0;">
+<img src="images/nng logo4.png" id="Image1" alt="" width="153" height="153"></div>
+<div id="SlideShow1" style="position:absolute;left:136px;top:175px;width:1006px;height:960px;z-index:1;">
+<ul id="SlideShow1-gallery">
+<li data-thumb="images/thebest.png" data-src="images/thebest.png"><img class="image" src="images/thebest.png" alt="" title=""></li>
+<li data-thumb="images/cameel perry_.png" data-src="images/cameel perry_.png"><img class="image" src="images/cameel perry_.png" alt="" title=""></li>
+<li data-thumb="images/thepiliya and monkey.png" data-src="images/thepiliya and monkey.png"><img class="image" src="images/thepiliya and monkey.png" alt="" title=""></li>
+</ul>
 </div>
-<div class="card col-md-4"> <img class="card-img-top" src="Construction.png" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">The site is still under construction</h5>
-    <p class="card-text">if there is bugs we will fix it soon :)</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a></div>
+<div id="wb_CssMenu1" style="position:absolute;left:158px;top:50px;width:984px;height:93px;z-index:2;">
+  <style>
+    @keyframes rgbGlow {
+      0%   { box-shadow: 0 0 10px 2px red; color: red; }
+      25%  { box-shadow: 0 0 10px 2px orange; color: orange; }
+      50%  { box-shadow: 0 0 10px 2px lime; color: lime; }
+      75%  { box-shadow: 0 0 10px 2px cyan; color: cyan; }
+      100% { box-shadow: 0 0 10px 2px magenta; color: magenta; }
+    }
+
+    #CssMenu1 .nav-link:hover {
+      animation: rgbGlow 2s infinite;
+      transition: all 0.3s ease;
+    }
+  </style>
+  <ul id="CssMenu1" role="menubar" class="nav">
+    <li role="menuitem" class="nav-item firstmain">
+      <a class="nav-link" href="create.html" target="_self">
+        <i class="fa fa-regular fa-image"></i>Edits&nbsp;(Photo)
+      </a>
+
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="" target="_self"><i class="fa fa-clapperboard"></i>Edits&nbsp;(Video)</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="" target="_self"><i class="fa fa-file-download"></i>Crack&nbsp;Software</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="" target="_self"><i class="fa fa-music"></i>Music</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="" target="_self"><i class="fa fa-fire"></i>Trending</a>
+</li>
+</ul>
 </div>
 </body>
+	
+	<css> </css>
 </html>
+
